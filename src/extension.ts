@@ -22,7 +22,9 @@ export function activate(context: vscode.ExtensionContext) {
     let datClone = vscode.commands.registerCommand('extension.datClone', () => {
         const rootPath = vscode.workspace.rootPath || '';
 
-        vscode.window.showInputBox()
+        vscode.window.showInputBox({
+            placeHolder: 'Dat link'
+        })
         .then(key => {
             if (key) {
                 vscode.window.showInputBox({
