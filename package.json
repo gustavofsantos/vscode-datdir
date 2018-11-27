@@ -3,11 +3,14 @@
     "displayName": "dat-dir",
     "description": "Share a directory with Dat",
     "version": "0.1.1",
-    "publisher": "Gustavo Santos",
+    "publisher": "gustavofsantos",
     "author": {
         "name": "Gustavo Santos",
         "email": "gfdsantos@inf.ufpel.edu.br",
         "url": "https://gsantos.site"
+    },
+    "repository": {
+        "url": "https://github.com/gustavofsantos/vscode-datdir"
     },
     "engines": {
         "vscode": "^1.20.1"
