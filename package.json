@@ -2,9 +2,15 @@
     "name": "dat-dir",
     "displayName": "dat-dir",
     "description": "Share a directory with Dat",
-    "version": "0.0.1",
+    "version": "0.1.1",
+    "publisher": "Gustavo Santos",
+    "author": {
+        "name": "Gustavo Santos",
+        "email": "gfdsantos@inf.ufpel.edu.br",
+        "url": "https://gsantos.site"
+    },
     "engines": {
-        "vscode": "^1.29.0"
+        "vscode": "^1.20.1"
     },
     "categories": [
         "Other"
