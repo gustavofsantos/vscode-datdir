@@ -2,7 +2,7 @@
     "name": "dat-dir",
     "displayName": "dat-dir",
     "description": "Share a directory with Dat",
-    "version": "0.1.6",
+    "version": "0.2.0",
     "publisher": "gustavofsantos",
     "author": {
         "name": "Gustavo Santos",

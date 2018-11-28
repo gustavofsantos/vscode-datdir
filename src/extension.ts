@@ -52,13 +52,16 @@ export function deactivate() {
 class DatHelper {
 
     public share(path: string) {
+        vscode.window.showInformationMessage('DatDir: Reading directory...');
         Dat(path, (err: any, dat: any) => {
             if (!err) {
                 dat.importFiles();
                 dat.joinNetwork();
 
-                vscode.window.showInformationMessage(`dat://${dat.key.toString('hex')}`);
+                vscode.window.showInformationMessage(`DatDir: dat://${dat.key.toString('hex')}`);
                 vscode.window.createOutputChannel('DatDir').appendLine(`dat://${dat.key.toString('hex')}`);
+            } else {
+                vscode.window.showInformationMessage('DatDir: Error sharing. Is this directory valid?');
             }
         });
     }
@@ -69,6 +72,8 @@ class DatHelper {
         }, (err: any, dat: any) => {
             if (!err) {
                 dat.joinNetwork();
+            } else {
+                vscode.window.showInformationMessage('DatDir: Error cloning. Is this hash and directory valid?');
             }
         });
     }
